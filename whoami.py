@@ -20,7 +20,7 @@ class HelloWorldRequestHandler(BaseHTTPRequestHandler):
 
 def run():
 
-    server_address = ("127.0.0.1", PORT)
+    server_address = ("0.0.0.0", PORT)
     httpd = HTTPServer(server_address, HelloWorldRequestHandler)
 
     print("✓ Server running on port {}...".format(PORT))
